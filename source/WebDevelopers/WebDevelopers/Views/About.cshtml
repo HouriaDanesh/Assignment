@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div class="container-fluid">
+		<div class="container">
+			<h1>@CurrentPage.Name</h1>
+	<br />
+			
+	@CurrentPage.about
+			@CurrentPage.GetGridHtml("aboutPage", "bootstrap3")
+		
+			
+	
+			</div>
+			</div>

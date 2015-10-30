@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div class="container-fluid">
+		<div class="container">
+			<div class="col-lg-8 pull-left">
+			<h2>@CurrentPage.Name</h2>
+	<br />
+				@CurrentPage.articleContents
+			</div>
+				<h4>Published at: @Model.Content.CreateDate</h4>
+			    <h4>LastEdited at: @Model.Content.UpdateDate</h4>
+			
+				</div>
+			</div>
